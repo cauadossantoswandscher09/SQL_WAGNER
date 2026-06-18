@@ -1,0 +1,12 @@
+- tabela de clientes 
+ Create table if not EXISTS clientes (
+ 	id_cliente INTEGER PRIMARY KEY AUTOINCREMENT,
+   	nome_cliente TEXT NOT NULL,
+   	email_cliente TEXT NOT NULL UNIQUE,
+   	telefone_cliente TEXT NOT NULL UNIQUE,
+   	CEPcL_iente TEXT NOT NULL,
+   	estado_cliente TEXT NOT NULL,
+   	cidade_cliente TEXT NOT NULL,
+   	bairro_cliente TEXT NOT NULL,
+   	data_cadastro TEXT DEFAULT CURRENT_TIMESTAMP
+   );
